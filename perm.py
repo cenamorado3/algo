@@ -1,11 +1,11 @@
 #permutes the given iterable        
 def perm(iterable, r=None):
 
-```
+'''
 example:
     permutations('ABCD', 2) --> AB AC AD BA BC BD CA CB CD DA DB DC
     permutations(range(3)) --> 012 021 102 120 201 210
-```
+'''
     
     #generates a tuple from the given iterable object. keep in mind tuples are imutable.
     pool = tuple(iterable)
@@ -43,7 +43,7 @@ example:
 
 
 
-```
+'''
 DRIVER
 a = list(perm('531')) #it is important to note this is a generator function, extra step must be taken to avoid <generator object perm at 0x0...........> statements
 b = [''.join(i) for i in a] #string elements of list for output
@@ -159,3 +159,4 @@ cycles[i] == 0
 3
 FINAL OUTPUT
 ['531', '513', '351', '315', '153', '135']
+'''
